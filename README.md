@@ -53,6 +53,28 @@ The application also provides dedicated interfaces for managing customers, order
 | Assistant Settings | Provides configuration options for the AI assistant. |
 | Automated Testing | Includes automated tests for backend services and assistant operations. |
 
+## Project Screenshots
+
+### Dashboard
+
+![ServAI Dashboard](assets/screenshots/dashboard.png)
+
+### AI Assistant
+
+![ServAI AI Assistant](assets/screenshots/ai-assistant.png)
+
+### Orders
+
+![ServAI Orders](assets/screenshots/orders.png)
+
+### Customers
+
+![ServAI Customers](assets/screenshots/customers.png)
+
+### Assistant Settings
+
+![ServAI Assistant Settings](assets/screenshots/assistant-settings.png)
+
 ### AI Function Calling Workflow
 
 ServAI uses Google Gemini Function Calling to connect natural language requests with application operations.
@@ -197,7 +219,8 @@ ServAI/
 ├── requirements.txt
 └── README.md
 
-```
+``` 
+
 ---
 
 **ServAI**
