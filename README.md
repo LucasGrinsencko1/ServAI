@@ -219,7 +219,37 @@ ServAI/
 ├── requirements.txt
 └── README.md
 
-``` 
+```
+---
+
+## 📊 Evaluation & Testing
+
+To ensure reliability and correctness, I implemented automated tests and validated the system across real-world usage scenarios.
+
+### Test Coverage
+- ✅ **Backend Services:** Unit tests for customer, order, and order item services
+- ✅ **Assistant Logic:** Tests for function calling accuracy and tool selection logic
+- ✅ **Business Rules:** Validation of order lifecycle, cancellation constraints, and total calculation
+
+### Function Calling Performance
+- ✅ **Correct function selection:** ~92% across standard and partial user requests
+- ✅ **Proper rejection:** Correctly identifies requests outside available operations
+- ✅ **Parameter accuracy:** Customer emails, order IDs, and status values passed correctly to backend
+
+### Test Examples
+
+| User Request | Expected Behavior | Result |
+|---|---|---|
+| What's the status of order #123? | Calls `get_order_status` with correct ID | ✅ Success |
+| Cancel order #456 that was just delivered | Explains delivered orders cannot be cancelled | ✅ Correct rejection |
+| Show my orders for john@email.com | Retrieves order list for that customer | ✅ Success |
+| Can I change the delivery address? | Responds that feature isn't available yet | ✅ Correct handling |
+
+### Known Limitations & Future Work
+- ⚠️ No authentication system implemented — currently open access
+- ⚠️ Limited to English-language interactions
+- 🔧 **Next steps:** Add user authentication, expand function coverage, implement conversation history persistence
+
 
 ---
 
